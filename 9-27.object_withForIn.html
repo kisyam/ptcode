@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>9-27.object_withForIn</title>
+        <script>
+            let product = {
+                item: "milk",
+                mart: "K-mart",
+            };
+            console.log(product["item"]);
+
+            for (let i in product) {
+                alert(i + ":" + product[i]);
+            }
+        </script>
+    </head>
+    <body></body>
+</html>

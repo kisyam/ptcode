@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>7-77.simple_naver</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            .container {
+                background-color: #f4f7f8;
+                width: 1080px;
+                margin: 0 auto;
+                overflow: hidden;
+            }
+            .top {
+                width: 1080px;
+                height: 50px;
+                background-color: #04c65a;
+                margin-bottom: 8px;
+            }
+            .top__title {
+                padding: 10px;
+                color: white;
+            }
+            .naver__logo {
+                float: right;
+            }
+
+            .left {
+                float: left;
+                background-color: tomato;
+                width: 740px;
+                height: 428px;
+                margin-bottom: 8px;
+                border-radius: 8px;
+            }
+            .right {
+                float: right;
+                background-color: skyblue;
+                width: 332px;
+                height: 428px;
+                margin-bottom: 8px;
+                border-radius: 8px;
+            }
+
+            .left__down {
+                float: left;
+                background-color: skyblue;
+                width: 332px;
+                height: 428px;
+                margin-bottom: 8px;
+                border-radius: 8px;
+            }
+            .right__down {
+                float: right;
+                background-color: navajowhite;
+                width: 740px;
+                height: 428px;
+                margin-bottom: 8px;
+                border-radius: 8px;
+            }
+            ul.gnb {
+                color: whitesmoke;
+                width: 50%;
+                float: left;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                padding-left: 0;
+                background: cornflowerblue;
+                margin-bottom: 8px;
+            }
+            ul.gnb > li {
+                list-style-type: none;
+                float: left;
+                padding-left: 16px;
+            }
+            ul.rank {
+                color: #101010;
+                float: right;
+                width: 50%;
+                background: yellow;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                margin-bottom: 8px;
+            }
+            ul.rank > li {
+                list-style-type: none;
+                float: right;
+                padding-right: 16px;
+            }
+            ul.footer {
+                color: #101010;
+                float: left;
+                padding-top: 8px;
+                padding-left: 8cqh;
+                padding-bottom: 8px;
+                margin-bottom: 8px;
+            }
+            ul.footer > li {
+                list-style-type: none;
+                float: left;
+                padding-right: 16px;
+            }
+            a {
+                text-decoration: none;
+            }
+            /* 600px 이하의 좁은 화면*/
+            @media (max-width: 600px) {
+                body {
+                    background-color: tomato;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="top">
+                <h1 class="top__title">
+                    NAVER
+                    <img
+                        src="./naver_480.png"
+                        alt="naverLogo"
+                        width="120px"
+                        class="naver__logo"
+                    />
+                </h1>
+
+                <ul class="gnb">
+                    <li><a href="">메일</a></li>
+                    <li><a href="">카페</a></li>
+                    <li><a href="">블로그</a></li>
+                    <li><a href="">쇼핑</a></li>
+                    <li><a href="">사전</a></li>
+                    <li><a href="">뉴스</a></li>
+                    <li><a href="">증권</a></li>
+                    <li><a href="">부동산</a></li>
+                    <li><a href="">지도</a></li>
+                </ul>
+
+                <ul class="rank">
+                    <li>실시간 검색 순위</li>
+                </ul>
+            </div>
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="left__down"></div>
+            <div class="right__down"></div>
+            <div class="bottom">
+                <ul class="footer">
+                    <li><a href="">회사소개</a></li>
+                    <li><a href="">인재채용</a></li>
+                    <li><a href="">제휴제안</a></li>
+                    <li><a href="">이용약관</a></li>
+                    <li><a href="">개인정보처리방침</a></li>
+                    <li><a href="">청소년보호정책</a></li>
+                    <li><a href="">네이버 정책</a></li>
+                    <li><a href="">고객센터</a></li>
+                    <li>ⓒ NAVER Corp.</li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

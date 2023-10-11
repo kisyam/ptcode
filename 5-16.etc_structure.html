@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>5-16.etc_structure</title>
+        <style>
+            ul {
+                overflow: hidden;
+            }
+            li {
+                list-style: none;
+                float: left;
+                padding: 15px;
+            }
+            li:first-child {
+                border-radius: 10px 0 0 10px;
+            }
+            li:last-child {
+                border-radius: 0 10px 10px 0;
+            }
+            li:nth-child(2n) {
+                background-color: #ff0003;
+            }
+            li:nth-child(2n):hover {
+                background-color: #800000;
+            }
+            li:nth-child(2n + 1) {
+                background-color: #800000;
+            }
+            li:nth-child(2n + 1):hover {
+                background-color: #ff0003;
+            }
+        </style>
+        <script>
+            function hello() {
+                console.log("kim");
+            }
+            console.log("Hello");
+            (function iife() {
+                console.log("I'm IIFE");
+            })();
+
+            (function iife2() {
+                console.log("I'm IIFE");
+            })();
+
+            (function () {
+                console.log("hi");
+            })();
+
+            hello(); //callable
+        </script>
+    </head>
+    <body>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li>10</li>
+        </ul>
+    </body>
+</html>

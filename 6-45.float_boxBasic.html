@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>6-45.float_boxBasic</title>
+        <style>
+            .father {
+                display: flex;
+                height: 100vh;
+                justify-content: center;
+                flex-flow: nowrap;
+            }
+            .box {
+                height: 200px;
+                color: white;
+                font-size: 36px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .box:first-child {
+                background-color: tomato;
+                flex-grow: 1;
+                flex-shrink: 3;
+            }
+            .box:nth-child(2) {
+                background-color: cornflowerblue;
+                flex-grow: 2;
+                flex-shrink: 0;
+            }
+            .box:last-child {
+                background-color: teal;
+                flex-grow: 1;
+                flex-shrink: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="father">
+            <div class="box">wow it is amazing 😎</div>
+            <div class="box">wow it is amazing 😎</div>
+            <div class="box">wow it is amazing 😎</div>
+        </div>
+    </body>
+</html>
